@@ -15,6 +15,7 @@
 #import "PFWeatherClientBasicImpl.h"
 #import "PFWeatherReportDaoFileSystemImpl.h"
 #import "PFCityDaoUserDefaultsImpl.h"
+#import "PFCityDaoJapanImpl.h"
 
 @implementation PFCoreComponents
 
@@ -38,6 +39,11 @@
 - (id)cityDao
 {
     return [TyphoonDefinition withClass:[PFCityDaoUserDefaultsImpl class]];
+}
+
+- (id)cityJapanDao
+{
+    return [TyphoonDefinition withClass:[PFCityDaoJapanImpl class]];
 }
 
 

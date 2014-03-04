@@ -24,4 +24,6 @@
 
 - (id)cityDao;
 
+- (id)cityJapanDao;
+
 @end

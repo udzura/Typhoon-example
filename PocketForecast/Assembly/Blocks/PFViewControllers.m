@@ -60,7 +60,7 @@
         initializer.selector = @selector(initWithWeatherClient:weatherReportDao:cityDao:theme:);
         [initializer injectWithDefinition:[_coreComponents weatherClient]];
         [initializer injectWithDefinition:[_coreComponents weatherReportDao]];
-        [initializer injectWithDefinition:[_coreComponents cityDao]];
+        [initializer injectWithDefinition:[_coreComponents cityJapanDao]];
         [initializer injectWithDefinition:[_themeProvider currentTheme]];
     }];
 }

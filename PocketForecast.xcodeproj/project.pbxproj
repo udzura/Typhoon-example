@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		199A536E348B418CA156E0E1 /* libPods-PocketForecast.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD2943E8EFE24EB5B86A64F3 /* libPods-PocketForecast.a */; };
+		199A536E348B418CA156E0E1 /* libPods-PocketForecast.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FD2943E8EFE24EB5B86A64F3 /* libPods-PocketForecast.a */; settings = {ATTRIBUTES = (Required, ); }; };
+		2C80D28A18C5E6B20034F1E0 /* PFCityDaoJapanImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C80D28918C5E6B20034F1E0 /* PFCityDaoJapanImpl.m */; };
 		63BC2FE07CCF4D6582089FCE /* libPods-PocketForecastTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 609097971E734E02BFBD9A9C /* libPods-PocketForecastTests.a */; };
 		6B2E1D9F18962CFB00BA4EE0 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B2E1D9E18962CFB00BA4EE0 /* libxml2.dylib */; };
 		6B2E1DA018962D0100BA4EE0 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B2E1D9E18962CFB00BA4EE0 /* libxml2.dylib */; };
@@ -108,6 +109,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2C80D28818C5E6B20034F1E0 /* PFCityDaoJapanImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PFCityDaoJapanImpl.h; sourceTree = "<group>"; };
+		2C80D28918C5E6B20034F1E0 /* PFCityDaoJapanImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PFCityDaoJapanImpl.m; sourceTree = "<group>"; };
 		609097971E734E02BFBD9A9C /* libPods-PocketForecastTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PocketForecastTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B2E1D9E18962CFB00BA4EE0 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
 		6B9FABBE16FEA9D800BABD3D /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -291,6 +294,8 @@
 				6BE9230415B29E56002EF310 /* PFCityDao.h */,
 				6BE9230515B29E56002EF310 /* PFCityDaoUserDefaultsImpl.h */,
 				6BE9230615B29E56002EF310 /* PFCityDaoUserDefaultsImpl.m */,
+				2C80D28818C5E6B20034F1E0 /* PFCityDaoJapanImpl.h */,
+				2C80D28918C5E6B20034F1E0 /* PFCityDaoJapanImpl.m */,
 				6BE9230715B29E56002EF310 /* PFWeatherReportDao.h */,
 				6BE9230815B29E56002EF310 /* PFWeatherReportDaoFileSystemImpl.h */,
 				6BE9230915B29E56002EF310 /* PFWeatherReportDaoFileSystemImpl.m */,
@@ -816,6 +821,7 @@
 				BA7981261B5929B6EA923BD4 /* PFWeatherReportViewController.m in Sources */,
 				BA7983310436F7ED629C7F11 /* PFWeatherReportView.m in Sources */,
 				BA798479CEF2F6CFA15C8587 /* PFForecastTableViewCell.m in Sources */,
+				2C80D28A18C5E6B20034F1E0 /* PFCityDaoJapanImpl.m in Sources */,
 				BA7988B4C6492066F2440A11 /* PFCityLabelTableViewCell.m in Sources */,
 				BA798EFDC1DE7FD4BABFFF0C /* PFRootViewController.m in Sources */,
 				BA79826C1FDA74AFD7DE1593 /* PFProgressHUD.m in Sources */,
@@ -1001,8 +1007,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD)";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Jasper Blues (9MHUZ2475N)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jasper Blues (9MHUZ2475N)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/External\"",
@@ -1013,15 +1019,15 @@
 				GCC_PREFIX_HEADER = "PocketForecast/PocketForecast-Prefix.pch";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "PocketForecast/PocketForecast-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = (
 					"-Objc",
 					"-all_load",
 					"$(inherited)",
 				);
 				PRODUCT_NAME = PocketForecast;
-				PROVISIONING_PROFILE = "865EB4E3-A259-4CA5-BB4E-C864CF692C25";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "865EB4E3-A259-4CA5-BB4E-C864CF692C25";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2 \"${PROJECT_DIR}/Pods\"/**";
 				VALID_ARCHS = "armv7 armv7s";
@@ -1035,8 +1041,8 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD)";
-				CODE_SIGN_IDENTITY = "iPhone Developer: Jasper Blues (9MHUZ2475N)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Jasper Blues (9MHUZ2475N)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/External\"",
@@ -1047,15 +1053,15 @@
 				GCC_PREFIX_HEADER = "PocketForecast/PocketForecast-Prefix.pch";
 				HEADER_SEARCH_PATHS = "";
 				INFOPLIST_FILE = "PocketForecast/PocketForecast-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				OTHER_LDFLAGS = (
 					"-Objc",
 					"-all_load",
 					"$(inherited)",
 				);
 				PRODUCT_NAME = PocketForecast;
-				PROVISIONING_PROFILE = "865EB4E3-A259-4CA5-BB4E-C864CF692C25";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "865EB4E3-A259-4CA5-BB4E-C864CF692C25";
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				TARGETED_DEVICE_FAMILY = 1;
 				USER_HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2 \"${PROJECT_DIR}/Pods\"/**";
 				VALID_ARCHS = "armv7 armv7s";
